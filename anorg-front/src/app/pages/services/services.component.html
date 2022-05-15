@@ -1,0 +1,38 @@
+<div class="service-name mb-3">
+  <h5>SERVICES</h5>
+</div>
+
+<div class="main">
+    <div class="tab-header">
+      <ul class="tc  d-flex flex-row">
+        <li class="p-2" (click)="viewMode ='tab1'" [ngClass]="{'active':viewMode =='tab1'}"><i class="fa-solid fa-graduation-cap"></i><span> EduTech</span></li>
+        <li class="p-2" (click)="viewMode ='tab2'" [ngClass]="{'active':viewMode =='tab2'}"><i class="fa-solid fa-tractor"></i><span> Agrotech</span></li>
+        <li class="p-2" (click)="viewMode ='tab3'" [ngClass]="{'active':viewMode =='tab3'}"><i class="fa-solid fa-microchip"></i><span> Technology</span></li>
+        <li class="p-2" (click)="viewMode ='tab4'" [ngClass]="{'active':viewMode =='tab4'}"><i class="fa-solid fa-cart-shopping"></i><span> eCommerce</span></li>
+        <li class="p-2" (click)="viewMode ='tab5'" [ngClass]="{'active':viewMode =='tab5'}"><i class="fa-solid fa-robot"></i><span> Robotics</span></li>
+        <!-- <li class="p-2" (click)="viewMode ='tab6'" [ngClass]="{'active':viewMode =='tab6'}">Projects</li> -->
+  
+      </ul>
+    </div>
+    <div class="tab-body" [ngSwitch]=" viewMode">
+      <div *ngSwitchCase="'tab1'">
+        <app-edutech></app-edutech>
+      </div>
+      <div *ngSwitchCase="'tab2'">
+       <app-agrotech></app-agrotech>
+      </div>
+      <div *ngSwitchCase="'tab3'">
+        <app-technology></app-technology>
+      </div>
+      <div *ngSwitchCase="'tab4'">
+        <app-ecommerce></app-ecommerce>
+      </div>
+      <div *ngSwitchCase="'tab5'">
+        <app-robotics></app-robotics>
+      </div>
+      <div *ngSwitchCase="'tab6'">
+        <app-projects></app-projects>
+      </div>
+  
+    </div>
+  </div>

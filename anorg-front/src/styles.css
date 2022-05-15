@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root
+{
+    --anorg-color : #006c36;
+    --primary-font : 'Roboto',sans-serif;
+    --weglobal-color : #006c36;
+    --primary-color : #006c36;
+    --secondary-color : #43121d;
+    --third-color : #f98169;
+    --white-color :#fff;
+    --text-color : #999;
+    --black-color :#000;
+    --blue-color : #03BFFC;
+    --primary-font : 'Roboto',sans-serif;
+    --seconadry-font : 'Arial',sans-serif;
+    --bg-black-900 : #f2f2fc;
+    --bg-black-100 : #fdf9ff;
+    --bg-black-50 : #e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --skin-color : #006c36;
+    --bg-gray-100 : hsla(38, 37%, 46%, 0.377);
+}
+
+.tc
+{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+p{
+    font-family: 'Barlow', sans-serif;
+}
+h1,h2,h5{
+    font-family: 'Barlow', sans-serif;
+}
+
+.service-name h5{
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.service-name h5::before{
+    content: '';
+    height: 30px;
+    width: 160px;
+    background: linear-gradient(357deg, rgba(12,70,240,0.577468487394958) 0%, rgba(10,146,240,0.3841911764705882) 19%, rgba(18,223,207,0.4290091036414566) 34%, rgba(93,233,135,0.44021358543417366) 55%, rgba(72,214,15,0.40379901960784315) 78%, rgba(68,113,7,0.4458158263305322) 100%);
+    position: absolute;
+    
+    left : 0;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+/* .service-name h5::after{
+    content: '';
+    height: 10px;
+    width: 100px;
+    background-color: #006c36;
+    position: absolute;
+    
+    left : 0;
+    margin-top: 70px;
+    margin-left: 10px;
+} */
+
+/* .section
+{
+
+min-height :100vh;
+display: block;
+padding: 0 30px;
+Opacity :1;
+
+} */

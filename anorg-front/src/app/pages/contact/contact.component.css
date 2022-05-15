@@ -1,0 +1,194 @@
+.container
+{
+    background-color: #7697a0;
+    color: white;
+    border-top: 10px solid blue;
+    border-radius: 15px;
+    
+}
+h2{
+    
+    font-weight: 700;
+    
+font-family: 'Merriweather', serif;
+
+}
+h3{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+form{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+
+.boxFB
+{
+    position: absolute;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    display: flex;
+    margin-left: 200px;
+}
+.boxIN
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 125px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.boxTW
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 275px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.boxWA
+{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 200px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.fbimg
+{
+    background: url(../../../assets/fb.png);
+    
+    width: 90px;
+    height: 90px;
+    transform: rotate(270deg);
+    
+}
+.waimg
+{
+    background: url(../../../assets/wa.png);
+    width: 85px;
+    height: 85px;
+    margin: 05px;
+    
+}
+.inimg
+{
+    background: url(../../../assets/in.png);
+    width: 85px;
+    height: 85px;
+    margin: 05px;
+    
+}
+.twimg
+{
+    background: url(../../../assets/TWITTER.png);
+    width: 85px;
+    height: 85px;
+    margin: 05px;
+    
+}
+.form-control
+{
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+.form-control:focus
+{
+    border: 2px solid var(--anorg-color);
+}
+.form-control::placeholder
+{
+    color: white;
+}
+
+form{
+    margin-top: 60px;
+}
+
+/* Mobile and tab view */
+@media (max-width: 450px)
+{
+    .socilebox
+    {
+        margin: 0;
+    }
+    .boxWA
+    {
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 120px;
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        border-radius: 10px;
+        transform: rotate(45deg);
+    }
+    .boxTW
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 195px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.boxIN
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 45px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.boxFB
+{
+    position: absolute;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    display: flex;
+    margin-left: 120px;
+}
+.form{
+    margin-top: 150px;
+    height: 500px;
+    width: 100%;
+}
+form{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 120px;
+    background-color: gray;
+}
+
+}

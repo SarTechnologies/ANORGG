@@ -1,0 +1,70 @@
+.container
+{
+    
+     background: #7697a0;
+     border-radius: 15px; 
+}
+
+.row h1{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-weight: 500;
+ color: white;
+ margin-top: 10px;
+}
+.box1
+{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    background-color:#7697a0;;
+    color: white;
+    border-radius: 15%;
+    height: 300px;
+    box-shadow: inset 12.31px 12.31px 15px #648088, inset -12.31px -12.31px 15px #88aeb8;
+}
+.box1:hover
+{
+    
+    box-shadow: 15.62px 15.62px 17px #648088, -15.62px -15.62px 17px #88aeb8;
+    cursor: pointer;
+}
+
+
+
+.box1 h3
+{
+    margin-top: 20px;
+    font-family: var(--primary-font);
+}
+
+.box1 .boxlogo{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.rainbowText {
+    
+    
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: move 100s linear infinite;
+}
+
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+
+/* Mobile and tab view */
+@media (max-width: 450px)
+{
+  .box1{
+     margin-bottom: 20px;
+      width: 300px;
+  }
+}

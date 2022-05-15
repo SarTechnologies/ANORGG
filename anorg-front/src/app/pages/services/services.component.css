@@ -1,0 +1,98 @@
+.main {
+    padding: 40px;
+}
+.main .tab-header {
+    width: 100%;
+    border: none;
+    background-color: rgb(5, 48, 5);
+}
+.main .tab-header li span{
+    
+    display: inline-block;
+}
+.main .tab-header li {
+    color:white;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+.main .tab-header li.active {
+    
+    border-bottom: 0px;
+    cursor: pointer;
+    background-color: var(--anorg-color);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+}
+.main .tab-header ul {
+    display: flex !important;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.main .tab-header li:after {
+    display: none;
+}
+.main .tab-header li .fa-solid
+{
+    color: darkgray;
+}
+
+
+
+
+.main .tab-header a {
+    padding: 8px;
+}
+.main .tab-body {
+    width: 100%;
+    background-color: var(--anorg-color);
+    padding: 20px 15px;
+}
+
+.fa-solid
+{
+    margin-right: 8px;
+    
+}
+
+/* Mobile and tab view */
+@media (max-width: 450px)
+{
+    .main{
+        padding: 2px;
+    }
+  .tab-header
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .main .tab-header ul
+  {
+font-size: 5px;
+
+  }
+  .main .tab-header li 
+  {
+   align-items: center;
+   text-align: center;
+    width: 100%;
+    justify-content: space-between;
+  } 
+  .main .tab-header li span
+  {
+    display: none;
+    
+  } 
+
+}

@@ -1,0 +1,130 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 25px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: large;
+}
+.anorg-btn
+{
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+
+}
+
+/* scanning mechnism */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scan
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scan .fingerprint
+{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: url(../../../../assets/finger.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+}
+.scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../assets/finger2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    animation: animate 4s ease-in-out infinite;
+}
+.scan .fingerprint::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #3fefef;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line
+{
+    0%,100%
+    {
+        top: 0%;
+    }
+    50%
+    {
+        top: 100%;
+    }
+} 
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+        height: 0%;
+    }
+    50%
+    {
+        height: 100%;
+    }
+}
+
+ul{
+    list-style-type: disc;
+    text-align: left;
+}
+li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: large;
+}
+/* Mobile and tab view */
+@media (max-width: 450px)
+{
+    .scan{
+        margin-top: 20px;
+    }
+    .scan .fingerprint
+    {
+      
+        width: 350px;
+        height: 400px;
+        background: url(../../../../assets/finger.png);
+        background-size: 350px;
+        background-repeat: no-repeat;
+    }
+    .scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../assets/finger2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    animation: animate 4s ease-in-out infinite;
+}
+}

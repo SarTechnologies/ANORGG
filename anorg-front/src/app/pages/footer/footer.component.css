@@ -1,0 +1,90 @@
+nav
+{
+    background: var(--anorg-color);
+   
+    padding-top: 5px;
+}
+span a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.foot-mid
+{
+    margin-top: 20px;
+}
+h2{
+    margin-top: 20px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+}
+.tc
+{
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+
+.fb,.wa,.in,.tw{
+    color: #ffffff;
+    margin-top: 10px;
+}
+.fb:hover
+{
+    margin-top: 0px;
+}
+.wa:hover
+{
+    margin-top: 0px;
+}
+.in:hover
+{
+    margin-top: 0px;
+}
+.tw:hover
+{
+    margin-top: 0px;
+}
+
+
+/* middle footer css */
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+li{
+    padding-bottom: 5px;
+    color: var(--text-color);
+}
+li h3:hover
+{
+    
+   color: black;
+    cursor: pointer;
+    
+}
+.quick
+{
+    color: black;
+}
+hr{
+    color: #ffffff;
+    height: 2px;
+}

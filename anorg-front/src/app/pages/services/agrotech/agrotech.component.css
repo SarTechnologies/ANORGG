@@ -1,0 +1,96 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 25px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: large;
+}
+.anorg-btn
+{
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+
+}
+
+/* scanning mechnism */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scan
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scan .fingerprint
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(../../../../assets/agrotech1.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+.scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../assets/agrotech2.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        height: 0%;
+    }
+    50%
+    {
+        height: 100%;
+    }
+}
+/* Mobile and tab view */
+@media (max-width: 450px)
+{
+    .scan{
+        margin-top: 20px;
+    }
+    .scan .fingerprint
+    {
+      
+        width: 350px;
+        height: 350px;
+        background: url(../../../../assets/agrotech1.png);
+        background-size: 350px;
+        background-repeat: no-repeat;
+    }
+    .scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../assets/agrotech2.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    animation: animate 4s ease-in-out infinite;
+}
+}

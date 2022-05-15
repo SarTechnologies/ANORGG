@@ -1,0 +1,118 @@
+
+
+  <nav class="navbar navbar-expand-lg navbar-light navigation-wrap" id="head">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/logo4.png" width="170" height="80" alt="">
+        
+      <!-- <span class="comName">DiGiT Global</span> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+       
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Clients
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Mumbai</a></li>
+              <li><a class="dropdown-item" href="#">Nagpur</a></li>
+              <li><a class="dropdown-item" href="#">Pune</a></li>
+              <li><a class="dropdown-item" href="#">Banglore</a></li>
+              <li><a class="dropdown-item" href="#">Delhi</a></li>
+              <li><a class="dropdown-item" href="#">Chennai</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" [routerLink]="['/technology']">EduTech</a></li>
+              <li><a class="dropdown-item" href="#" [routerLink]="['/technology']">AgroTech</a></li>
+              <li><a class="dropdown-item" href="#" [routerLink]="['/technology']">Technology</a></li>
+              <li><a class="dropdown-item" href="#">eCommerce</a></li>
+              <li><a class="dropdown-item" href="#" [routerLink]="['/technology']">Robotics</a></li>
+              <li><a class="dropdown-item" href="#" [routerLink]="['/technology']">Projects</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">News & Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+          
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="../../assets/home-tech1.png" class="d-block w-100" alt="...">
+         
+         <div class="carousel-caption">
+           <h5>Welcome to Anorg Technology</h5>
+          
+           <p>Anorg is an startup with vision of creating employment worldwide for tier B and C cities and search talents from villages and urban areas.
+            To Mentor them with new technologies to compete this rapidly changing market.
+            Anorg is an organization consists with world class leadership and dynamic talents who are having 10+ years of experience jointly in technologies and management. 
+          </p>
+          <h6><button type="button" [routerLink]="['/technology']" class="btn btn-outline-danger tc">Read More</button></h6>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="../../assets/home-robot1.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption">
+           <h5>Anorg in Embedded</h5>
+           <p> Anorg ROBTICS is 
+            dedicated to bring new talents 
+            and mentor them in robotics and embedded system.This is enabling to deploy 
+        these talents in industries automation, education and technical projects.
+        Anorg Robotics is operating as joint venture with one of the best entity BMOS technologies.
+
+</p>
+<h6><button type="button" [routerLink]="['/technology']" class="btn btn-outline-danger tc">Read More</button></h6>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="../../assets/home-robot2.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption">
+           <h5>Anorg in AgroTech</h5>
+           <p>Anorg is bringing automation and technology in agriculture area to increase quality and production by innovative and new techniques. Anorg aim to enhance the quality of farmers life by educating and giving them opportunity to increase sources of income.
+            Anorg AgroTech aim to bring awareness towards Agriculture benefits and opportunities to Farmers.
+           </p>
+           <h6><button type="button" [routerLink]="['/technology']" class="btn btn-outline-danger tc">Read More</button></h6>
+          </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ 
